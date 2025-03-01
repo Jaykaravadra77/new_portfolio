@@ -1,0 +1,164 @@
+.experience-section {
+  padding: 2rem 0;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.experience-tabs {
+  display: flex;
+  overflow-x: auto;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.tab-button {
+  background: transparent;
+  border: none;
+  padding: 1rem 1.5rem;
+  color: var(--text-color-secondary);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  position: relative;
+}
+
+.tab-button:hover {
+  color: var(--secondary-color);
+  background-color: rgba(100, 255, 218, 0.1);
+}
+
+.tab-button.active {
+  color: var(--secondary-color);
+}
+
+.tab-button.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--secondary-color);
+}
+
+.experience-content {
+  padding: 1rem;
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.job-title {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.company-name {
+  color: var(--secondary-color);
+}
+
+.job-duration {
+  color: var(--text-color-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.job-responsibilities {
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.responsibility-item {
+  color: var(--text-color-secondary);
+  margin-bottom: 1rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.responsibility-item::before {
+  content: '▹';
+  position: absolute;
+  left: -1.5rem;
+  color: var(--secondary-color);
+}
+
+.tech-used, .achievements {
+  margin-top: 1.5rem;
+}
+
+.tech-used h4, .achievements h4 {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  background-color: rgba(100, 255, 218, 0.1);
+  color: var(--secondary-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.achievements-list {
+  margin-left: 1.5rem;
+}
+
+.achievement-item {
+  color: var(--text-color-secondary);
+  margin-bottom: 0.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.achievement-item::before {
+  content: '★';
+  position: absolute;
+  left: -1.5rem;
+  color: var(--secondary-color);
+}
+
+@media (min-width: 768px) {
+  .experience-container {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  
+  .experience-tabs {
+    flex-direction: column;
+    border-bottom: none;
+    border-left: 1px solid var(--border-color);
+    width: 200px;
+    min-width: 200px;
+    overflow-x: visible;
+    margin-bottom: 0;
+  }
+  
+  .tab-button {
+    text-align: left;
+    padding: 1rem;
+  }
+  
+  .tab-button.active::after {
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+  }
+  
+  .experience-content {
+    flex: 1;
+  }
+} 
