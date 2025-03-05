@@ -60,12 +60,6 @@ const Projects = () => {
               <span className="year-label">Year:</span> {selectedProject.year}
             </p>
             
-            {selectedProject.image && (
-              <div className="modal-image-container">
-                <img src={selectedProject.image} alt={selectedProject.title} className="modal-image" />
-              </div>
-            )}
-            
             <div className="modal-description">
               <h3>Project Description</h3>
               <p>{selectedProject.description}</p>
