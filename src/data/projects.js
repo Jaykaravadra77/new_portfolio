@@ -88,7 +88,7 @@ const projects = [
       "Designed scalable database schemas and APIs to handle various sports club configurations and membership types",
     ],
     image: "/images/project2.jpg",
-    technologies: ["Node.js", "Fastify", "MongoDB", "Redis", "RESTful APIs", "Stripe API"],
+    technologies: ["Node.js", "Fastify", "MongoDB", "Redis", "Stripe Payment"],
     githubLink: "",
     liveLink: ""
   },
@@ -113,7 +113,7 @@ const projects = [
   {
     id: 7,
     title: "Puzzle Generator Algorithm",
-    company: "Personal Project",
+    company: "Yudiz Solutions Limited",
     year: "2025",
     description: "A backend algorithm that programmatically generates and solves puzzles similar to LinkedIn's Tango game. This mini-project demonstrates my interest in algorithmic problem-solving and automation of creative processes.",
     details: [
@@ -125,8 +125,25 @@ const projects = [
       "Eliminated the need for manual puzzle creation by automating the entire process"
     ],
     image: "/images/project7.jpg",
-    technologies: ["Node.js", "JavaScript", "Algorithms", "Data Structures", "RESTful API"],
-    githubLink: "https://github.com/username/puzzle-generator",
+    technologies: ["Node.js","Fastify","MongoDB"],
+    liveLink: ""
+  },
+  {
+    id: 8,
+    title: "Node.js Developer Portfolio",
+    company: "Personal Project",
+    year: "2025",
+    description: "My professional portfolio website showcasing my backend development projects and experience. This responsive React-based portfolio was developed using AI-assisted coding techniques to streamline the development process.",
+    details: [
+      "Designed and developed a responsive portfolio website to showcase my Node.js backend development projects",
+      "Leveraged AI tools like Claude to accelerate development and improve code quality",
+      "Implemented a clean, modern UI with a dark theme optimized for readability",
+      "Created a project showcase with detailed modal views to highlight technical contributions",
+      "Built with React and CSS for a responsive experience across all devices",
+      "Utilized AI pair programming to optimize development workflow and solve complex UI challenges"
+    ],
+    technologies: ["React", "JavaScript", "CSS"],
+    githubLink: "https://github.com/Jaykaravadra77/new_portfolio",
     liveLink: ""
   }
 ];

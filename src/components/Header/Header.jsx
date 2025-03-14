@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {   NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
@@ -20,27 +20,17 @@ const Header = () => {
           <ul className="nav-list">
             <li className="nav-item">
               <NavLink to="/" className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'} onClick={() => setMenuOpen(false)}>
-                Home
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink to="/about" className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'} onClick={() => setMenuOpen(false)}>
-                About
+                <span className="nav-text">Home</span>
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink to="/projects" className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'} onClick={() => setMenuOpen(false)}>
-                Projects
+                <span className="nav-text">Projects</span>
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink to="/experience" className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'} onClick={() => setMenuOpen(false)}>
-                Experience
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink to="/contact" className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'} onClick={() => setMenuOpen(false)}>
-                Contact
+                <span className="nav-text">Experience</span>
               </NavLink>
             </li>
           </ul>
@@ -50,4 +40,4 @@ const Header = () => {
   );
 };
 
-export default Header; 
+export default Header;
